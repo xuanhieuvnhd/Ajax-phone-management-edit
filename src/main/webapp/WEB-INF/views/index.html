@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: darkcyan;
+            color: white;
+            padding: 10px 0 10px 20px;
+        }
+        div {
+            text-align: center;
+        }
+        a {
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
+<div>
 <h1>Home</h1><br>
 <a th:href="@{/smartphones/create}">Create</a><br>
-<a th:href="@{/smartphones/}">Phone List</a>
+<a th:href="@{/smartphones/}">PhoneList</a>
+</div>
 </body>
 </html>

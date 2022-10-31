@@ -5,7 +5,6 @@
     <title>List Smartphone</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
-
         $(document).ready(function () {
             var deleteLink = $("a:contains('Delete')");
             $(deleteLink).click(function (event) {
@@ -37,7 +36,7 @@
     <h1>All Smartphones</h1>
     <a th:href="@{/smartphones/create}">Create</a>
     <div>
-        <p>Here you can see a list of Smartphones:</p>
+        <p>Here you can see a list of Smartphones</p>
         <div id="sPhoneFromResponse"></div>
     </div>
     <table style="width: 80%" border="1px" cellpadding="0" cellspacing="0">
@@ -45,7 +44,7 @@
         <tr>
             <th>Producer</th>
             <th>Model</th>
-            <th>Price</th>
+            <th>Price($)</th>
             <th>Actions</th>
         </tr>
         </thead>
